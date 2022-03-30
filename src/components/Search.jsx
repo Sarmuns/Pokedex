@@ -15,7 +15,7 @@ export default function Search(props){
               placeholder="Search thy pokymane"/>
           </Col>
           <Col sm={2} className="my-1">
-            <Button block onClick={(e) => props.getPokemon(search)}>Search</Button>
+            <Button block onClick={(e) => props.getPokemon(search.toLowerCase())}>Search</Button>
           </Col>
         </Row>
       </Form>
