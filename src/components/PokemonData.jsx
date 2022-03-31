@@ -8,7 +8,12 @@ export default function PokemonData(props){
       <Col xs={12} md={6}>
           <Card>
             <Card.Header>
-              <h5>{props.name}</h5>
+              <Row>
+                <Col>
+              <h5>{props.name}</h5>                 
+              <small class="text-muted">Number: {props.id}</small>
+                </Col>
+              </Row>
               <Row>
                 <Col>
               <img src={props.sprite} alt={props.name}/>

@@ -12,13 +12,18 @@ export default function Search(props){
           <Col sm={10} className="my-1">
             <Form.Control
               onChange={(e => setSearch(e.target.value))}
-              placeholder="Search thy pokymane"/>
+              placeholder="Search thy pokemon"/>
           </Col>
-          <Col sm={2} className="my-1">
-            <Button block onClick={(e) => props.getPokemon(search)}>Search</Button>
+          <Col>
+            <Button className="h-100"block onClick={(e) => props.getPokemon(search.toLowerCase())}>Search</Button>
           </Col>
+          <Col>
+            <Button block onClick={(e) => props.getPokemon(Math.floor(Math.random()*898))}>Surprise Me!</Button>
+          </Col>
+
         </Row>
       </Form>
+       
     </Container>
   )
 }
