@@ -7,10 +7,10 @@ export default function Navigate(props){
     <Container>
         <Row>
         <Col className="my-1">
-            <Button block onClick={(e) => props.getPokemon(props.id-1)}>Previous</Button>
+            <Button className="w-100" block onClick={(e) => props.getPokemon(props.id-1)}>Previous</Button>
           </Col>
           <Col className="my-1">
-            <Button block onClick={(e) => props.getPokemon(props.id+1)}>Next</Button>
+            <Button className="w-100" block onClick={(e) => props.getPokemon(props.id+1)}>Next</Button>
           </Col>
         </Row>
     </Container>
