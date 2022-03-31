@@ -48,7 +48,7 @@ export default function PokemonData(props){
                 {props.stats.map((stat, key) => (
                 <div key={key}>
                   <strong>{stat.stat.name}</strong>
-                  <ProgressBar now={stat.base_stat} max={200} label={stat.base_stat}/>
+                  <ProgressBar now={stat.base_stat} max={250} label={stat.base_stat}/>
                 </div>
               ))}
             </Card.Body>
