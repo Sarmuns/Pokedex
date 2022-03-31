@@ -10,7 +10,7 @@ export default function PokemonData(props){
             <Card.Header>
               <Row>
                 <Col>
-              <h5>{props.name}</h5>                 
+              <h5>{props.name.charAt(0).toUpperCase() + props.name.slice(1)}</h5>                 
               <small class="text-muted">Number: {props.id}</small>
                 </Col>
               </Row>
@@ -42,7 +42,7 @@ export default function PokemonData(props){
         <Col xs={12} md={6}>
           <Card className="h-100">
             <Card.Header>
-              <h4>base stats</h4>
+              <h4>Base Stats</h4>
             </Card.Header>
             <Card.Body>
                 {props.stats.map((stat, key) => (
