@@ -14,8 +14,8 @@ export default function Search(props){
               onChange={(e => setSearch(e.target.value))}
               placeholder="Search thy pokemon"/>
           </Col>
-          <Col>
-            <Button className="h-100"block onClick={(e) => props.getPokemon(search.toLowerCase())}>Search</Button>
+          <Col sm={2} className="my-1">
+            <Button block onClick={(e) => props.getPokemon(search.toLowerCase())}>Search</Button>
           </Col>
           <Col>
             <Button block onClick={(e) => props.getPokemon(Math.floor(Math.random()*898))}>Surprise Me!</Button>
