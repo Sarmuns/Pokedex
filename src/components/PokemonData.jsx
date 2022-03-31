@@ -6,7 +6,7 @@ export default function PokemonData(props){
     <Container className="mt-2">
       <Row>
       <Col xs={12} md={6}>
-          <Card>
+          <Card  className="h-100">
             <Card.Header>
               <Row>
                 <Col>
@@ -40,9 +40,11 @@ export default function PokemonData(props){
           </Card>
         </Col>
         <Col xs={12} md={6}>
-          <Card>
+          <Card className="h-100">
+            <Card.Header>
+              <h4>base stats</h4>
+            </Card.Header>
             <Card.Body>
-                <h4>base stats</h4>
                 {props.stats.map((stat, key) => (
                 <div key={key}>
                   <strong>{stat.stat.name}</strong>
